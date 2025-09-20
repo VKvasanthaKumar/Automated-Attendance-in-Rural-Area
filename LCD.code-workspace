@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../Users/hp/Documents/PlatformIO/Projects/LCD"
+		},
+		{
+			"name": "key",
+			"path": "../Users/hp/Documents/PlatformIO/Projects/key"
+		}
+	],
+	"settings": {},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": []
+	}
+}
