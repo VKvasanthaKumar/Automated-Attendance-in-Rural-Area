@@ -66,7 +66,7 @@ python main.py [-h] (--enroll | --train | --recognize | --export)
   for example:
   
   C:\Users\hp\Downloads\face2> python main.py --enroll
-  other commands follow below
+  Others commands follow below
 
 
 ## How to Use
