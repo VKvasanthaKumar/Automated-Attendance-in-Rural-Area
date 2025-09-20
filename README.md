@@ -1,6 +1,5 @@
 "# Automated-Attendance-in-Rural-Area" 
-"# Automated-Attendance-in-Rural-Area" 
-"# Automated-Attendance-in-Rural-Area" 
+
 
 
 
@@ -54,12 +53,14 @@ Usage:
 python main.py [-h] (--enroll | --train | --recognize | --export)
 
  like terminal is :
- -----------------------------------------------------------
+ ```bash
    usage: main.py [-h] (--enroll | --train | --recognize | --export)
    main.py: error: one of the arguments --enroll --train --recognize --export is required
    C:\Users\hp\Downloads\face2>
+```
  ---------------------------------------------
   for example:
+  
   C:\Users\hp\Downloads\face2> python main.py --enroll
   other commands follow below
 
@@ -67,8 +68,9 @@ python main.py [-h] (--enroll | --train | --recognize | --export)
 ## How to Use
 
 ### 1. Enroll Your Face in Database
-
+```bash
 python main.py --enroll
+```
 
 * Captures your face and saves images in the `dataset/` folder.
 * Stores student details in the database (`attendance.db`).
@@ -76,15 +78,16 @@ python main.py --enroll
 
 
 ### 2. Train Your Face Images
-
+```bash
 python main.py --train
-
+```
 * Trains the face recognition model.
 * Saves trained data into `trainer.yml`.
 
 ### 3. Recognize Faces & Mark Attendance
-
+```bash
 python main.py --recognize
+```
 
 * Detects and recognizes faces through the webcam.
 * Automatically marks attendance in `attendance.db`.
@@ -93,8 +96,9 @@ python main.py --recognize
 ---
 
 ### 4. Export Attendance to CSV
-
+```bash
 python main.py --export
+```
 
 * Exports recent attendance records from the database into `attendance_log.csv`.
 
