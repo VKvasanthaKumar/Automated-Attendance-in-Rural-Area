@@ -33,6 +33,7 @@ It uses **OpenCV, SQLite, and Python** to detect faces, recognize students, and 
 ### Step 3: Install Required Packages
 
 Run the following command in VS Code Terminal:
+```bash
 pip install flask
 pip install opencv-python
 pip install opencv-contrib-python
@@ -41,8 +42,11 @@ pip install pandas
 pip install pillow
 pip install sqlite3-binary   # sometimes sqlite3 needs manual install
 pip install pickle5          # only if pickle errors occur
-
+```
+or Simply install required package used this command
+```bash
 pip install -r requirements.txt
+```
 
 
 ### Step 4: Run the Main Program
@@ -197,9 +201,9 @@ Faces with confidence < 60 are accepted as “recognized”.
 
 Summary:
 
-Face Detection → Haar Cascade Classifier
-Face Recognition → LBPH (Local Binary Patterns Histogram)
+## Face Detection → Haar Cascade Classifier
 
-      4th         
+## Face Recognition → LBPH (Local Binary Patterns Histogram)
+       
                 
    
