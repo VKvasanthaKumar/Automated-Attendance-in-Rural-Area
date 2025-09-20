@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enroll Student</title>
+</head>
+<body>
+  <h1>Enroll New Student</h1>
+  <form method="post">
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br>
+    <label>Registration Number:</label><br>
+    <input type="text" name="reg_no" required><br><br>
+    <input type="submit" value="Start Enrollment">
+  </form>
+  <a href="{{ url_for('home') }}">Back</a>
+</body>
+</html>
+
+enroll
+
+
+index.
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attendance System</title>
+</head>
+<body>
+  <h1>Face Recognition Attendance System</h1>
+  <a href="{{ url_for('enroll') }}">Enroll Student</a> |
+  <a href="{{ url_for('train') }}">Train Model</a> |
+  <a href="{{ url_for('recognize') }}">Start Recognition</a> |
+  <a href="{{ url_for('export') }}">Export CSV</a>
+
+  <h2>Registered Students</h2>
+  <ul>
+    {% for s in students %}
+      <li>{{ s[2] }} ({{ s[1] }})</li>
+    {% endfor %}
+  </ul>
+
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <ul style="color: green;">
+      {% for msg in messages %}
+        <li>{{ msg }}</li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+</body>
+</html>

@@ -1,0 +1,5 @@
+python main.py --enroll
+python main.py --train
+
+python main.py --recognize
+python main.py --export
